@@ -19,7 +19,10 @@ main{
 	background:#f3f3f3;
 }
 
-
+.circle-width{
+	width:300px;
+	height:300px;
+}
 .padding{
 	padding: 70px 0px 70px 0px;
 }
