@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Object-Oriented Software" />
+	<meta name="keywords" content="Design, Patterns, Elements, Reusable, Object-Oriented, Software" />
+	<title>The Value of Statelessness</title>
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/style.css" />
+  </head>
+<body>
+	<header>
+		<div class="container">
+			<a href="#" class="logo">Martin <span>Fowler</span></a>
+			<a href="index.html" class="home-link">&nbsp;</a>
+		</div>
+	</header>
+	<main>
+		<section class="content-section">
+			<div class="container">
+				<h1>The Value of Statelessness</h1>
+				<div class="wrap-image">
+					<img src="img/image_10.jpg" alt="">
+				</div>
+				<p>What do people mean by a stateless server? The whole point of objects, of course, is that they combine state (data) with behavior. A true stateless object is one with no fields. Such animals do show up from time to time, but frankly, they're pretty rare. Indeed, you can make a strong case that a stateless object is a bad design.</p>
+				<p>As it turns out, however, this isn't what most people mean when they talk about statelessness in a distributed enterprise application. When people refer to a stateless server they mean an object that doesn't retain state between requests. Such an object may well have fields, but when you invoke a method on a stateless server the values of the fields are undefined.</p>
+				<p>An example of a stateless server object might be one that returns a Web page telling you all about a book. You invoke a call on it by accessing a URL—the object might be an ASP document or a servlet. In the URL you supply an ISBN number that the server uses to generate the HTTP reply. During the interaction the server object might stash the book's ISBN, title, and price in fields when it gets them back from thedatabase, before it generates the HTML; maybe it does some business logic to determine whichcomplimentary reviews to show the user. Once it's done its job, however, these values become useless. Thenext ISBN is a whole new story, and the server object will probably reinitialize to clear out any old values toavoid mistakes.</p>
+				<p>Now imagine that you want to keep track of all the ISBNs visited by a particular client IP address. You cankeep this in a list maintained by the server object. However, this list must persist between requests and thusyou have a stateful server object. The shift from stateless to stateful is much more than three or four lettersat the end of the word. For many people stateful servers are nothing short of disastrous. Why is this?</p>
+				<p>The primary issue is one of server resources. Any stateful server object needs to keep all its state while waiting for a user to ponder a Web page. A stateless server object, however, can process other requests from other sessions. Here's a completely unrealistic yet helpful thought experiment. We have a hundred people who want to know about books, and processing a request about a book takes one second. Each person makes one request every ten seconds, and all requests are perfectly balanced. If we want to track a user's requests with a stateful server object, we must have one server object per user: one hundred objects. But 90 percent of the time these objects are sitting around doing nothing. If we forgo the ISBN tracking and just use stateless server objects to respond to requests, we can get away with only ten server objects fully employed all the time.</p>
+				<p>The point is that, if we have no state between method calls, it doesn't matter which object services the request, but if we do store state we need to always get the same object. Statelessness allows us to pool our objects so that we need fewer objects to handle more users. The more idle users we have, the more valuablestateless servers are. As you can imagine, stateless servers are very useful on high-traffic Web sites. Statelessness also fits in well with the Web since HTTP is a stateless protocol.</p>
+				<p>So everything should be stateless, right? Well, it would be if it could be. The problem is that many client interactions are inherently stateful. Consider the shopping cart metaphor that fuels a thousand e-commerce applications. The user's interaction involves browsing several books and picking which ones to buy. Theshopping cart needs to be remembered for the user's entire session. Essentially we have a stateful businesstransaction, which implies that the session has to be stateful. If I only look at books and don't buy anything,my session is stateless, but if I buy, it's stateful. We can't avoid the state unless we stay poor; instead, we have to decide what to do with it. The good news is that we can use a stateless server to implement astateful session; the interesting news is that we may not want to. </p>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="container">
+			<p>&#169; Copyright 2016 &nbsp; <a href="#">#HardhatsTeam</a></p>
+		</div>
+	</footer>
+</body>
+</html>
