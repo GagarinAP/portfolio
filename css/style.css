@@ -1,6 +1,6 @@
 body{
-	font-family: "Merriweather",sans-serif;
-	font-size: 18px;
+	font-family:"Merriweather",sans-serif;
+	font-size:18px;
 }
 header{
 	background-image:url('../img/header-bg.jpg');
@@ -13,12 +13,11 @@ header{
 	-o-background-size:cover;
 	text-align:center;
 	color:#fff;
-	background-color: #428bca;
+	background-color:#428bca;
 }
 main{
 	background:#f3f3f3;
 }
-
 .circle-width{
 	width:300px;
 	height:300px;
@@ -32,13 +31,12 @@ main{
 .padding-200{
 	padding: 200px 0px 200px 0px;
 }
-
 .background_portfolio{
 	background-image:url('../img/4.jpg');
 	background-position:center;
 	background-repeat:no-repeat;
 	background-color:#222;
-	height: 300px;
+	height:300px;
 }
 .background_contact{
 	background-image:url('../img/3.jpg');
@@ -52,22 +50,22 @@ main{
 	background-position:center;
 	background-repeat:no-repeat;
 	background-color:#222;
-	height: 300px;
+	height:300px;
 }
 h2,.h2{	
-	font-size: 40px;
+	font-size:40px;
 }
 h3,.h3{	
-	font-size: 30px;
+	font-size:30px;
 }
 h4,.h4{
-	font-size: 28px;
+	font-size:28px;
 }
 .margin_bottom_20{
-	margin-bottom: 20px;
+	margin-bottom:20px;
 }
 .margin_bottom_40{
-	margin-bottom: 40px;
+	margin-bottom:40px;
 }
 .color_white{
 	color:#fff;
@@ -132,8 +130,8 @@ h4,.h4{
 	FOOTER 
 */
 footer{
-	height: 200px;
-	background-color: rgba(255,255,255,0.3);
+	height:200px;
+	background-color:rgba(255,255,255,0.3);
 	color:#000;
 	padding:25px 0;
 	text-align:center;
@@ -264,7 +262,8 @@ fieldset[disabled] .btn-xl.active{
 	margin-top:0;
 }
 .portfolio-modal .modal-content img{
-	margin-bottom:30px;}
+	margin-bottom:30px;
+}
 .portfolio-modal .close-modal{
 	position:absolute;
 	width:75px;
@@ -275,7 +274,8 @@ fieldset[disabled] .btn-xl.active{
 	cursor:pointer;
 }
 .portfolio-modal .close-modal:hover{
-	opacity:.3;}
+	opacity:.3;
+}
 .portfolio-modal .close-modal .lr{
 	height:75px;
 	width:1px;
@@ -408,40 +408,40 @@ fieldset[disabled] .btn-xl.active{
     Section Experience
 */
 #Experience{
-    padding: 100px 0px 70px 0px;    
+    padding:100px 0px 70px 0px;    
 }
 #Experience .section-heading{
-    padding-top: 15px;
+    padding-top:15px;
 }
 .service-box{
-   padding: 0px 0px 60px;
+   padding:0px 0px 60px;
 }
 .service-box i{
-    float: left;
-    font-size: 30px;
-    width: 70px;
-    padding-top: 20px;
-    border-bottom: 2px solid #428bca;
-    padding-bottom: 20px;
-    text-align: center;
+    float:left;
+    font-size:30px;
+    width:70px;
+    padding-top:20px;
+    border-bottom:2px solid #428bca;
+    padding-bottom:20px;
+    text-align:center;
 }
 .service-inner{   
-   background: #428bca;
+   background:#428bca;
    padding:20px 20px 25px 30px;   
 }
 .service-inner h4{
-    margin-bottom: 20px;    
-    color: #fff;
+    margin-bottom:20px;    
+    color:#fff;
 }
 .service-inner p{
-	color: #fff;
-    font-size: 18px;
+	color:#fff;
+    font-size:18px;
 }
 /* 
 	PORTFOLIO 
 */
 #Portfolio{
-	padding: 100px 0px 70px 0px;
+	padding:100px 0px 70px 0px;
 }
 #Portfolio .portfolio-item{
 	margin:0 0 45px;
@@ -495,19 +495,21 @@ fieldset[disabled] .btn-xl.active{
 	margin:0;
 }
 #Portfolio .portfolio-item .portfolio-caption p{
-	font-family:Merriweather,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family:"Merriweather","Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-style:italic;
 	font-size:16px;
 	margin:0;
 }
-#Portfolio *{z-index:2;}
+#Portfolio *{
+	z-index:2;
+}
 /* 
 	NAVIGATION 
 */
 .navbar-default{
 	background:transparent;
 	color:#428bca;
-	font-family:Montserrat,Helvetica,Arial,cursive;
+	font-family:"Merriweather",Helvetica,Arial,cursive;
 	padding:25px 0;
 	-webkit-transition:padding .3s;
 	-moz-transition:padding .3s;
@@ -516,7 +518,7 @@ fieldset[disabled] .btn-xl.active{
 }
 .navbar-default .navbar-brand{
 	color:#428bca;
-	font-family:Montserrat,Helvetica,Arial,cursive;
+	font-family:"Merriweather",Helvetica,Arial,cursive;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
@@ -535,7 +537,7 @@ fieldset[disabled] .btn-xl.active{
 	background-color:#428bca;
 }
 .navbar-default .nav li a{
-	font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;		
+	font-family:"Merriweather","Helvetica Neue",Helvetica,Arial,sans-serif;		
 	font-weight:400;
 	letter-spacing:1px;
 	color:#fff;
@@ -574,8 +576,7 @@ fieldset[disabled] .btn-xl.active{
 }
 .navbar-default.navbar-shrink .navbar-brand{
 	font-size:30px;
-}
-
+} 
 .panel-primary{
 	border-color: #428bca;
 	height: 160px;
@@ -680,7 +681,6 @@ fieldset[disabled] .btn-xl.active{
 		height: auto;
 	}	
 }
-
 @media screen and (min-width:768px){
 	.timeline:before{
 		left:50%;
@@ -751,7 +751,6 @@ fieldset[disabled] .btn-xl.active{
 	.timeline>li.timeline-inverted>.timeline-panel{
 		padding:0 100px 20px 20px;
 	}
-
 	.navbar-default{
 		background:transparent;
 		padding:25px 0;
