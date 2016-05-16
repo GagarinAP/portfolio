@@ -3,7 +3,7 @@ body{
 	font-size:18px;
 }
 header{
-	background-image:url('../img/header-bg.jpg');
+	background-image:url('../img/header-bg.png');
 	background-repeat:none;
 	background-attachment:scroll;
 	background-position:center center;
@@ -52,6 +52,8 @@ main{
 	background-color:#222;
 	height:300px;
 }
+.text-muted{color:#666}
+
 h2,.h2{	
 	font-size:40px;
 }
@@ -73,64 +75,64 @@ h4,.h4{
 /* 
 	CONTACT 
 */
-#Contact{
+#contact{
 	background-color:#222;
 	background-image:url('../img/contact.jpg');
 	background-position:center;
 	background-repeat:no-repeat;
 }
-#Contact .section-heading{
+#contact .section-heading{
 	color:#fff;
 }
-#Contact .form-group{
+#contact .form-group{
 	margin-bottom:25px;
 }
-#Contact .form-group input,
-#Contact .form-group textarea{
+#contact .form-group input,
+#contact .form-group textarea{
 	padding:20px;
 }
-#Contact .form-group input.form-control{
+#contact .form-group input.form-control{
 	height:auto;
 }
-#Contact .form-group textarea.form-control{
+#contact .form-group textarea.form-control{
 	height:250px;
 }
-#Contact .form-control:focus{
+#contact .form-control:focus{
 	border-color:#428bca;
 	box-shadow:none;
 }
-#Contact ::-webkit-input-placeholder{
+#contact ::-webkit-input-placeholder{
 	font-family: "Merriweather","Helvetica Neue",Helvetica,Arial,sans-serif;
 	text-transform:uppercase;
 	font-weight:700;
 	color:#bbb;
 }
-#Contact :-moz-placeholder{
+#contact :-moz-placeholder{
 	font-family: "Merriweather","Helvetica Neue",Helvetica,Arial,sans-serif;
 	text-transform:uppercase;
 	font-weight:700;
 	color:#bbb;
 }
-#Contact ::-moz-placeholder{
+#contact ::-moz-placeholder{
 	font-family: "Merriweather","Helvetica Neue",Helvetica,Arial,sans-serif;
 	text-transform:uppercase;
 	font-weight:700;
 	color:#bbb;
 }
-#Contact :-ms-input-placeholder{
+#contact :-ms-input-placeholder{
 	font-family: "Merriweather","Helvetica Neue",Helvetica,Arial,sans-serif;
 	text-transform:uppercase;
 	font-weight:700;
 	color:#bbb;
 }
-#Contact .text-danger{
+#contact .text-danger{
 	color:#428bca;
 }
 /* 
 	FOOTER 
 */
 footer{
-	height:200px;
+	height:100px;
 	background-color:rgba(255,255,255,0.3);
 	color:#000;
 	padding:25px 0;
@@ -330,7 +332,7 @@ fieldset[disabled] .btn-xl.active{
 }
 .timeline>li:before,
 .timeline>li:after{
-	content:" ";
+	content:"";
 	display:table;
 }
 .timeline>li:after{
@@ -370,8 +372,8 @@ fieldset[disabled] .btn-xl.active{
 }
 .timeline>li .timeline-image h4{
 	font-size:10px;
-	margin-top:12px;
-	line-height:14px;
+	/* margin-top:40%; */
+	l/* ine-height:14px; */
 }
 .timeline>li.timeline-inverted>.timeline-panel{
 	float:right;
@@ -407,10 +409,10 @@ fieldset[disabled] .btn-xl.active{
 /*
     Section Experience
 */
-#Experience{
+#experience{
     padding:100px 0px 70px 0px;    
 }
-#Experience .section-heading{
+#experience .section-heading{
     padding-top:15px;
 }
 .service-box{
@@ -440,20 +442,20 @@ fieldset[disabled] .btn-xl.active{
 /* 
 	PORTFOLIO 
 */
-#Portfolio{
+#portfolio{
 	padding:100px 0px 70px 0px;
 }
-#Portfolio .portfolio-item{
+#portfolio .portfolio-item{
 	margin:0 0 45px;
 	right:0;
 }
-#Portfolio .portfolio-item .portfolio-link{
+#portfolio .portfolio-item .portfolio-link{
 	display:block;
 	position:relative;
 	max-width:400px;
 	margin:0 auto;
 }
-#Portfolio .portfolio-item .portfolio-link .portfolio-hover{
+#portfolio .portfolio-item .portfolio-link .portfolio-hover{
 	background:rgba(66,139,202,.3);
 	position:absolute;
 	width:100%;
@@ -463,10 +465,10 @@ fieldset[disabled] .btn-xl.active{
 	-webkit-transition:all ease .5s;
 	-moz-transition:all ease .5s;
 }
-#Portfolio .portfolio-item .portfolio-link .portfolio-hover:hover{
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover{
 	opacity:1;
 }
-#Portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content{
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content{
 	position:absolute;
 	width:100%;
 	height:20px;
@@ -476,31 +478,31 @@ fieldset[disabled] .btn-xl.active{
 	margin-top:-12px;
 	color:#fff;
 }
-#Portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i{
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i{
 	margin-top:-12px;
 }
-#Portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-#Portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4{
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4{
 	margin:0;
 }
-#Portfolio .portfolio-item .portfolio-caption{
+#portfolio .portfolio-item .portfolio-caption{
 	max-width:400px;
 	margin:0 auto;
 	background-color:#fff;
 	text-align:center;
 	padding:25px;
 }
-#Portfolio .portfolio-item .portfolio-caption h4{
+#portfolio .portfolio-item .portfolio-caption h4{
 	text-transform:none;
 	margin:0;
 }
-#Portfolio .portfolio-item .portfolio-caption p{
+#portfolio .portfolio-item .portfolio-caption p{
 	font-family:"Merriweather","Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-style:italic;
 	font-size:16px;
 	margin:0;
 }
-#Portfolio *{
+#portfolio *{
 	z-index:2;
 }
 /* 
@@ -517,7 +519,7 @@ fieldset[disabled] .btn-xl.active{
 	border:0;
 }
 .navbar-default .navbar-brand{
-	color:#428bca;
+	color:#fff;
 	font-family:"Merriweather",Helvetica,Arial,cursive;
 }
 .navbar-default .navbar-brand:hover,
@@ -526,6 +528,9 @@ fieldset[disabled] .btn-xl.active{
 .navbar-default .navbar-brand.active{
 	color:#428bca;
 }
+/* .fa-inverse{
+	background-color: #428bca;
+} */
 .navbar-default .navbar-toggle{
 	background-color:#428bca;
 	border-color:#428bca;
@@ -533,15 +538,15 @@ fieldset[disabled] .btn-xl.active{
 .navbar-default .navbar-toggle .icon-bar{
 	background-color:#fff;
 }
-.navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus{
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus{
 	background-color:#428bca;
 }
 .navbar-default .nav li a{
 	font-family:"Merriweather","Helvetica Neue",Helvetica,Arial,sans-serif;		
-	font-weight:400;
-	letter-spacing:1px;
+	font-weight:400;	
 	color:#fff;
-	font-size:22px;
+	font-size:20px;
 } 
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus{
@@ -607,7 +612,7 @@ fieldset[disabled] .btn-xl.active{
 		border-radius:3px;
 	}
 	.navbar-default.navbar-shrink{		
-		background: rgba(0,0,0,.5);
+		background: rgba(0,0,0,.9);
 		padding:10px 0;
 	}
 	.navbar-default.navbar-shrink .navbar-brand{
@@ -627,7 +632,7 @@ fieldset[disabled] .btn-xl.active{
 		border:0;
 	}
 	.navbar-default .nav li a{
-		font-size:18px;
+		font-size:17px;
 	}
 	.navbar-default .navbar-brand{
 		font-size:30px;
@@ -639,7 +644,7 @@ fieldset[disabled] .btn-xl.active{
 		border-radius:3px;
 	}	
 	.navbar-default.navbar-shrink{		
-		background: rgba(0,0,0,.5);
+		background: rgba(0,0,0,.9);
 		padding:10px 0;
 	}
 	.navbar-default.navbar-shrink .navbar-brand{
@@ -665,18 +670,18 @@ fieldset[disabled] .btn-xl.active{
 		transition:all .3s;
 	}
 	.navbar-default .navbar-collapse{
-		border-color:rgba(255,255,255,.4); 		
+		border-color:rgba(255,255,255,.0); 		
 	}
 	.navbar-default .navbar-nav>.active>a{
 		border-radius:3px;
 	}
 	.navbar-default.navbar-shrink{		
-		background: rgba(0,0,0,.8);
+		background: rgba(0,0,0,.9);
 		padding:10px 0;
 	}
 	.navbar-default.navbar-shrink .navbar-brand{
 		font-size:1.5em;
-	}	
+	}
 	.panel-primary{		
 		height: auto;
 	}	
@@ -726,7 +731,7 @@ fieldset[disabled] .btn-xl.active{
 	}
 	.timeline>li .timeline-image h4{
 		font-size:18px;
-		margin-top:30px;
+		margin-top:20px;
 		line-height:26px;
 	}
 	.timeline>li.timeline-inverted>.timeline-panel{
@@ -769,7 +774,7 @@ fieldset[disabled] .btn-xl.active{
 		border-radius:3px;
 	}
 	.navbar-default.navbar-shrink{		
-		background: rgba(0,0,0,.5);
+		background: rgba(0,0,0,.9);
 		padding:10px 0;
 	}
 	.navbar-default.navbar-shrink .navbar-brand{
