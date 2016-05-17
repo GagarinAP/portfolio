@@ -1,5 +1,19 @@
+@font-face {
+    font-family: 'Merriweather';
+    src: url('../fonts/Merriweather/Merriweather.woff') format('woff'),
+         url('../fonts/Merriweather/Merriweather.ttf') format('truetype'),
+         url('../fonts/Merriweather/Merriweather.svg#Merriweather') format('svg');
+}
+
+@font-face {
+    font-family: 'Yellowtail';
+    src: url('../fonts/Yellowtail/Yellowtail.woff') format('woff'),
+         url('../fonts/Yellowtail/Yellowtail.ttf') format('truetype'),
+         url('../fonts/Yellowtail/Yellowtail.svg#Yellowtail') format('svg');
+}
+
 body{
-	font-family:"Merriweather",sans-serif;
+	font-family: Merriweather, sans-serif;
 	font-size:18px;
 }
 header{
@@ -30,6 +44,9 @@ main{
 }
 .padding-200{
 	padding: 200px 0px 200px 0px;
+}
+.border-bottom{
+	border-bottom: 20px solid #428bca;
 }
 .background_portfolio{
 	background-image:url('../img/4.jpg');
@@ -102,25 +119,25 @@ h4,.h4{
 	box-shadow:none;
 }
 #contact ::-webkit-input-placeholder{
-	font-family: "Merriweather","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: Merriweather,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	text-transform:uppercase;
 	font-weight:700;
 	color:#bbb;
 }
 #contact :-moz-placeholder{
-	font-family: "Merriweather","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: Merriweather,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	text-transform:uppercase;
 	font-weight:700;
 	color:#bbb;
 }
 #contact ::-moz-placeholder{
-	font-family: "Merriweather","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: Merriweather,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	text-transform:uppercase;
 	font-weight:700;
 	color:#bbb;
 }
 #contact :-ms-input-placeholder{
-	font-family: "Merriweather","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: Merriweather,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	text-transform:uppercase;
 	font-weight:700;
 	color:#bbb;
@@ -140,14 +157,14 @@ footer{
 }
 footer span.copyright{
 	line-height:40px;
-	font-family: "Merriweather","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: Merriweather,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	text-transform:uppercase;
 	text-transform:none;
 }
 footer ul.quicklinks{
 	margin-bottom:0;
 	line-height:40px;
-	font-family:"Merriweather","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family:Merriweather,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	text-transform:uppercase;
 	text-transform:none;
 }
@@ -191,7 +208,7 @@ ul.social-buttons li a:active{
 	color:#fff;
 	background-color:#428bca;
 	border-color:#428bca;
-	font-family:"Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family:Merriweather,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	text-transform:uppercase;
 	font-weight:700;
 	border-radius:3px;
@@ -255,7 +272,7 @@ fieldset[disabled] .btn-xl.active{
 }
 .portfolio-modal .modal-content p.item-intro{
 	margin:20px 0 30px;
-	font-family:"Merriweather","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family:Merriweather,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-style:italic;
 	font-size:16px;
 }
@@ -372,8 +389,7 @@ fieldset[disabled] .btn-xl.active{
 }
 .timeline>li .timeline-image h4{
 	font-size:10px;
-	/* margin-top:40%; */
-	l/* ine-height:14px; */
+	
 }
 .timeline>li.timeline-inverted>.timeline-panel{
 	float:right;
@@ -497,7 +513,7 @@ fieldset[disabled] .btn-xl.active{
 	margin:0;
 }
 #portfolio .portfolio-item .portfolio-caption p{
-	font-family:"Merriweather","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family:Merriweather,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-style:italic;
 	font-size:16px;
 	margin:0;
@@ -511,7 +527,7 @@ fieldset[disabled] .btn-xl.active{
 .navbar-default{
 	background:transparent;
 	color:#428bca;
-	font-family:"Merriweather",Helvetica,Arial,cursive;
+	font-family:Merriweather,Helvetica,Arial,cursive;
 	padding:25px 0;
 	-webkit-transition:padding .3s;
 	-moz-transition:padding .3s;
@@ -520,7 +536,7 @@ fieldset[disabled] .btn-xl.active{
 }
 .navbar-default .navbar-brand{
 	color:#fff;
-	font-family:"Merriweather",Helvetica,Arial,cursive;
+	font-family:Merriweather,Helvetica,Arial,cursive;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
@@ -528,9 +544,6 @@ fieldset[disabled] .btn-xl.active{
 .navbar-default .navbar-brand.active{
 	color:#428bca;
 }
-/* .fa-inverse{
-	background-color: #428bca;
-} */
 .navbar-default .navbar-toggle{
 	background-color:#428bca;
 	border-color:#428bca;
@@ -543,7 +556,7 @@ fieldset[disabled] .btn-xl.active{
 	background-color:#428bca;
 }
 .navbar-default .nav li a{
-	font-family:"Merriweather","Helvetica Neue",Helvetica,Arial,sans-serif;		
+	font-family:Merriweather,"Helvetica Neue",Helvetica,Arial,sans-serif;		
 	font-weight:400;	
 	color:#fff;
 	font-size:20px;
@@ -603,7 +616,7 @@ fieldset[disabled] .btn-xl.active{
 		border:0;
 	}
 	.navbar-default .navbar-brand{
-		font-size:30px;
+		font-size:2em;
 		-webkit-transition:all .3s;
 		-moz-transition:all .3s;
 		transition:all .3s;
@@ -765,7 +778,8 @@ fieldset[disabled] .btn-xl.active{
 		border:0;
 	}
 	.navbar-default .navbar-brand{
-		font-size:30px;
+		font-size:2em;
+		font-weight:800;
 		-webkit-transition:all .3s;
 		-moz-transition:all .3s;
 		transition:all .3s;
