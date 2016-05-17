@@ -1,3 +1,4 @@
+/* FONTS */
 @font-face {
     font-family: 'Merriweather';
     src: url('../fonts/Merriweather/Merriweather.woff') format('woff'),
@@ -11,7 +12,7 @@
          url('../fonts/Yellowtail/Yellowtail.ttf') format('truetype'),
          url('../fonts/Yellowtail/Yellowtail.svg#Yellowtail') format('svg');
 }
-
+/* STYLE */
 body{
 	font-family: Merriweather, sans-serif;
 	font-size:18px;
@@ -48,29 +49,29 @@ main{
 .border-bottom{
 	border-bottom: 20px solid #428bca;
 }
-.background_portfolio{
+.pre_portfolio{
 	background-image:url('../img/4.jpg');
 	background-position:center;
 	background-repeat:no-repeat;
 	background-color:#222;
 	height:300px;
 }
-.background_contact{
+.pre_contact{
 	background-image:url('../img/3.jpg');
 	background-position:center;
 	background-repeat:no-repeat;
 	background-color:#222;
 	height: 300px;
 }
-.background_exp{
+.pre_exp{
 	background-image:url('../img/2.jpg');
 	background-position:center;
 	background-repeat:no-repeat;
 	background-color:#222;
 	height:300px;
 }
-/* .text-muted{color:#666;}
-p .text-muted1{color:#000;font-size:18px;} */
+.text-muted{color:#666;}
+
 h2,.h2{	
 	font-size:40px;
 }
@@ -527,7 +528,7 @@ fieldset[disabled] .btn-xl.active{
 .navbar-default{
 	background:transparent;
 	color:#428bca;
-	font-family:Merriweather,Helvetica,Arial,cursive;
+	font-family:Merriweather,Yellowtail,Helvetica,Arial,cursive;
 	padding:25px 0;
 	-webkit-transition:padding .3s;
 	-moz-transition:padding .3s;
