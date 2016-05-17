@@ -69,8 +69,8 @@ main{
 	background-color:#222;
 	height:300px;
 }
-.text-muted{color:#666}
-
+/* .text-muted{color:#666;}
+p .text-muted1{color:#000;font-size:18px;} */
 h2,.h2{	
 	font-size:40px;
 }
@@ -119,25 +119,25 @@ h4,.h4{
 	box-shadow:none;
 }
 #contact ::-webkit-input-placeholder{
-	font-family: Merriweather,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: Merriweather,Yellowtail,Helvetica,Arial,sans-serif;
 	text-transform:uppercase;
 	font-weight:700;
 	color:#bbb;
 }
 #contact :-moz-placeholder{
-	font-family: Merriweather,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: Merriweather,Yellowtail,Helvetica,Arial,sans-serif;
 	text-transform:uppercase;
 	font-weight:700;
 	color:#bbb;
 }
 #contact ::-moz-placeholder{
-	font-family: Merriweather,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: Merriweather,Yellowtail,Helvetica,Arial,sans-serif;
 	text-transform:uppercase;
 	font-weight:700;
 	color:#bbb;
 }
 #contact :-ms-input-placeholder{
-	font-family: Merriweather,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: Merriweather,Yellowtail,Helvetica,Arial,sans-serif;
 	text-transform:uppercase;
 	font-weight:700;
 	color:#bbb;
@@ -157,14 +157,14 @@ footer{
 }
 footer span.copyright{
 	line-height:40px;
-	font-family: Merriweather,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: Merriweather,Yellowtail,Helvetica,Arial,sans-serif;
 	text-transform:uppercase;
 	text-transform:none;
 }
 footer ul.quicklinks{
 	margin-bottom:0;
 	line-height:40px;
-	font-family:Merriweather,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family:Merriweather,Yellowtail,Helvetica,Arial,sans-serif;
 	text-transform:uppercase;
 	text-transform:none;
 }
@@ -208,7 +208,7 @@ ul.social-buttons li a:active{
 	color:#fff;
 	background-color:#428bca;
 	border-color:#428bca;
-	font-family:Merriweather,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family:Merriweather,Yellowtail,Helvetica,Arial,sans-serif;
 	text-transform:uppercase;
 	font-weight:700;
 	border-radius:3px;
@@ -272,7 +272,7 @@ fieldset[disabled] .btn-xl.active{
 }
 .portfolio-modal .modal-content p.item-intro{
 	margin:20px 0 30px;
-	font-family:Merriweather,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family:Merriweather,Yellowtail,Helvetica,Arial,sans-serif;
 	font-style:italic;
 	font-size:16px;
 }
@@ -513,7 +513,7 @@ fieldset[disabled] .btn-xl.active{
 	margin:0;
 }
 #portfolio .portfolio-item .portfolio-caption p{
-	font-family:Merriweather,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family:Merriweather,Yellowtail,Helvetica,Arial,sans-serif;
 	font-style:italic;
 	font-size:16px;
 	margin:0;
@@ -556,7 +556,7 @@ fieldset[disabled] .btn-xl.active{
 	background-color:#428bca;
 }
 .navbar-default .nav li a{
-	font-family:Merriweather,"Helvetica Neue",Helvetica,Arial,sans-serif;		
+	font-family:Merriweather,Yellowtail,Helvetica,Arial,sans-serif;		
 	font-weight:400;	
 	color:#fff;
 	font-size:20px;
@@ -597,8 +597,9 @@ fieldset[disabled] .btn-xl.active{
 } 
 .panel-primary{
 	border-color: #428bca;
-	height: 160px;
+	height: auto;
 	border-radius: 0px;
+	min-height: 170px;
 }
 .panel-heading{
 	border-radius: 0px;
@@ -664,7 +665,7 @@ fieldset[disabled] .btn-xl.active{
 		font-size:1.2em;
 	}	
 	.panel-primary{		
-		height: 200px;
+		height: auto;
 	}
 }
 @media screen and (max-width:768px){	
