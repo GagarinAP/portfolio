@@ -42,7 +42,8 @@ main{
 	height:300px;
 }
 .padding{
-	padding: 70px 0px 70px 0px;
+	margin-top: 70px;
+	margin-bottom: 70px;	
 }
 .padding-bottom{
 	padding-bottom: 20px;
@@ -102,6 +103,7 @@ h4,.h4{
 	background-image:url('../img/contact.jpg');
 	background-position:center;
 	background-repeat:no-repeat;
+	width: 100vw;
 }
 #contact .section-heading{
 	color:#fff;
@@ -599,7 +601,7 @@ fieldset[disabled] .btn-xl.active{
 }
 .navbar-default.navbar-shrink .navbar-brand{
 	font-size:30px;
-} 
+}
 .panel-primary{
 	border-color: #428bca;
 	height: auto;
@@ -702,8 +704,8 @@ fieldset[disabled] .btn-xl.active{
 		font-size:1.5em;
 	}
 	.panel-primary{		
-		height: auto;
-	}	
+			height: auto;
+    }	
 }
 @media screen and (min-width:768px){
 	.timeline:before{
