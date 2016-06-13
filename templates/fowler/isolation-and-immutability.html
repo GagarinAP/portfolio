@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Object-Oriented Software" />
+	<meta name="keywords" content="Design, Patterns, Elements, Reusable, Object-Oriented, Software" />
+	<title>Isolation and Immutability</title>
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<header>
+		<div class="container">
+			<a href="#" class="logo">Martin <span>Fowler</span></a>
+			<a href="index.html" class="home-link">&nbsp;</a>
+		</div>
+	</header>
+	<main>
+		<section class="content-section">
+			<div class="container">
+				<h1>Isolation and Immutability</h1>
+				<div class="wrap-image">
+					<img src="img/image_11.jpg" alt="">
+				</div>
+				<p>The problems of concurrency have been around for a while, and software people have come up with various solutions. For enterprise applications two solutions are particularly important: isolation and immutability.</p>
+				<p>Concurrency problems occur when more than one active agent, such as a process or thread, has access to the same piece of data. One way to deal with this is isolation: Partition the data so that any piece of it can only be accessed by one active agent. Processes work like this in operating system memory: The operating system allocates memory exclusively to a single process, and only that process can read or write the data linked to it. Similarly you find file locks in many popular productivity applications. If Martin opens a file, nobody else can open it. They may be allowed to open a read-only copy of the file as it was when Martin started, but they can't change it and they don't get to see the file between his changes.</p>
+				<p>Isolation is a vital technique because it reduces the chance of errors. Too often we've seen people get themselves into trouble because they use a technique that forces everyone to worry about concurrency all the time. With isolation you arrange things so that the programs enters an isolated zone, within which you don't have to worry about concurrency. Good concurrency design is thus to find ways of creating such zones and to ensure that as much programming as possible is done in one of them.</p>
+				<p>You only get concurrency problems if the data you're sharing can be modified. So one way to avoid concurrency conflicts is to recognize <b>immutable</b> data. Obviously we can't make all data immutable, as the whole point of many systems is data modification. But by identifying some data as immutable, or at least immutable almost all the time, we can relax our concurrency concerns for it and share it widely. Another option is to separate applications that are only reading data, and have them use copied data sources, from which we can then relax all concurrency controls.</p>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="container">
+			<p>&#169; Copyright 2016 &nbsp; <a href="#">#HardhatsTeam</a></p>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,452 @@
+/*
+Theme colors
+=============
+# / 40,40,40 - body-background (light-gray);
+# / 32,32,32 - background sidebar (dark-grey)
+#262626 / 42,42,42 - container (dark-grey)
+# / 243,156,18  - font-color + hover     (white and yellow); 
+*/
+/* ==============================================
+                   FONTS
+============================================== */
+@font-face {
+    font-family: 'Oswald';
+    src: url('fonts/Oswald/Oswald-Regular.ttf') format('truetype'),
+    	 url('fonts/Oswald/Oswald-Regular.svg#Oswald') format('svg'),
+         url('fonts/Oswald/Oswald-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Yellowtail';
+    src: url('fonts/Yellowtail/Yellowtail-Regular-webfont.woff') format('woff'),
+         url('fonts/Yellowtail/Yellowtail-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Yellowtail/Yellowtail-Regular-webfont.svg#Yellowtail') format('svg');
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url('fonts/OpenSans/OpenSans.woff') format('woff'),
+         url('fonts/OpenSans/OpenSans.ttf') format('truetype'),
+         url('fonts/OpenSans/OpenSans.svg#OpenSans') format('svg');
+}
+/* ==============================================
+                   BODY
+============================================== */
+body{
+  background-color: rgb(40,40,40);
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.4em;
+  font-family: 'Oswald', 'OpenSans','Yellowtail',sans-serif;  
+  font-weight: normal;
+  font-style: normal; 
+}
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.main {
+  display: block;   
+  width: 1200px;
+  height: 100%;
+  min-height: 800px;  
+  margin: 0 auto;
+  background: rgb(32,32,32); 
+  -webkit-box-shadow: 4px 4px 8px 2px rgba(26, 26, 26, 1);
+	 -moz-box-shadow: 4px 4px 8px 2px rgba(26, 26, 26, 1);
+	      box-shadow: 4px 4px 8px 2px rgba(26, 26, 26, 1); 
+  color: #fff;
+  overflow: auto;
+}
+.sidebar { 
+  display: block;
+  height: 100%;
+  height: 800px; 
+  padding: 20px;
+  width: 240px;  
+  background: rgb(32,32,32);
+  position: relative;
+  float: left;  
+}
+.content{  
+  display: block;
+  height: 100%;
+  min-height: 800px;  
+  padding: 30px;
+  background-color: rgb(42,42,42);
+  background-image: url('../img/Texture.png');
+  width: 960px;   
+  float: right; 
+  overflow: auto; 
+}
+a {
+	text-decoration: none;
+	font-size: 18px;
+	position: relative;
+	-webkit-transition: all 0.15s ease;
+	   -moz-transition: all 0.15s ease;
+	    -ms-transition: all 0.15s ease;
+	     -o-transition: all 0.15s ease;
+	        transition: all 0.15s ease;
+}
+img {
+	display: block;
+	width: 100%;
+	z-index: 1;	
+	position: relative;
+}
+.row {
+	display: block;
+	width: 100%;	
+}
+.column-four {
+	float: left;
+	width: 190px;
+	height: 190px;
+	margin: 17px;	
+	z-index: 5;
+}
+.thumb-image {
+	margin-bottom: 20px;
+	display: block;
+	overflow: hidden;	 
+}
+.overlay{
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(62,62,62,0);
+}
+a:hover .overlay{
+	background: rgba(243,156,18,0.33);
+	z-index: 20;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('../img/Shape.png');
+	background-repeat:no-repeat;
+}
+/* ==============================================
+                   TEXT
+============================================== */
+h1 {
+	font-family: 'Yellowtail';
+	font-size: 46px;
+	color: rgb(243,156,18);	
+	/* font-weight: normal;
+    font-style: normal; */
+}
+hr{
+	background-color: #666;
+	border: none;
+	height: 1px;
+}
+h2 {
+	font-family: 'OpenSans';
+	font-size: 38px;
+	color: rgb(243,156,18);	
+}
+h3 {
+	font-size: 25px;
+	color: rgb(243,156,18);
+	line-height: 30px;
+	font-weight: normal;
+    font-style: normal;
+}
+h4 {
+	font-size: 28px;
+}
+h5 {
+	font-family:'Oswald';
+	font-size: 18px;
+	margin-bottom: 10px;
+	font-weight: normal;
+}
+h6 {
+	font-size: 20px;
+}
+p {
+	font-family: 'OpenSans';
+	margin: 10px 0px;
+	line-height: 1.75em;
+}
+i {
+	font-style: italic;
+}
+b {
+	font-weight: 600;
+}
+p span{
+	color: rgb(99,99,99);
+}
+/* ==============================================
+                   NAVIGATION , LIST
+============================================== */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 180px;
+    width: 100%;
+}
+li a {
+    display: block;
+    color: #fff;
+}
+li a:hover {
+    color: rgb(243,156,18);
+}
+a.this{	
+	color: rgb(243,156,18);	
+}
+.pipa{
+  display:block;
+  padding-bottom: 20px;
+}
+
+/* ==============================================
+                   FONTS
+============================================== */
+.tweet{
+	font-family: 'OpenSans';
+	font-size: 13px;
+}
+footer{
+	font-family: 'OpenSans';
+	font-size: 13px;
+	padding-top: 20px;
+	width: 180px;
+}
+.logo p{
+	font-family: 'OpenSans';
+	font-size: 12px;
+	display: block;
+	margin-top: -10px;
+    padding-bottom: 30px;
+}
+.cosial ul li{
+  display: inline-block;
+  margin-right: 10px;
+}
+/* ==============================================
+                   POST
+============================================== */
+.post{	
+	max-width: 620px;
+	width: 100%;
+	display: inline-block;
+}
+.post p{
+	font-family: 'OpenSans';
+	font-size: 14px;
+}
+.post img{
+	display: block;
+	width: 620px;
+	width: 100%;
+	height:100%;
+	height: 210px;
+	padding: 10px 0px 10px 0px;
+}
+/* ==============================================
+                   META
+============================================== */
+.meta{ 
+ 	display: inline-block; 	
+ 	padding: 20px 0px 20px 0px;
+ }
+.meta ul{  	
+	display: inline-block;
+	width: 620px;
+	width: 100%;
+ 	
+ }
+.meta ul li{ 
+ 	display: inline-block;
+    color: #666;
+    padding-right: 20px;
+    float: left;
+}
+.meta span{
+	color: rgb(243,156,18);
+}
+/* ==============================================
+                   PAGINATION
+============================================== */
+.pagination{ 
+	width: 620px;
+	width: 100%;
+	padding-top: 30px;
+ }
+.pagination ul{ 	
+ 	padding: 20px 0px 20px 0px;
+ }
+.pagination ul li{
+	display: inline-block;
+}
+.pagination ul li a{ 
+	font-family: 'OpenSans';
+	font-size: 14px; 	
+    color: #999;
+    padding: 10px;
+    background: rgba(0,0,0,0.2);
+}
+.pagination ul li a:hover{ 
+	font-family: 'OpenSans';
+	font-size: 14px; 	
+    color: rgb(243,156,18);    
+    background: rgba(0,0,0,0.5);
+}
+.pagination ul li a.this{	
+	color: rgb(243,156,18);
+	background-color: rgba(0,0,0,0.5);
+}
+/* ==============================================
+                   TITLE
+============================================== */
+.title{
+	font-family: 'Oswald';
+	line-height: 1em;
+}
+.title h2 > span{
+	font-weight:600;
+	font-size:48px;
+}
+.title p > span{
+	font-weight:400;
+	font-size:35px;
+	color: #fff;
+}
+/* ==============================================
+                   MEDIA QUERY
+============================================== */
+@media screen and (max-width: 1200px) {
+  .main{
+    width: 1000px;
+  }
+  .sidebar{
+  	width: 20%;
+  }
+  .content{
+  	width: 80%;
+  }
+  .row{
+  	width: 100%;
+  } 
+  .post p {
+    font-family: 'OpenSans';
+    font-size: 14px;
+  }  
+}
+@media screen and (max-width: 1024px) {
+  .main{
+    width: 748px;
+  }
+  .sidebar{
+  	width: 30%;
+  }
+  .content{
+  	width: 70%;
+  }
+  .post p {
+    font-family: 'OpenSans';
+    font-size: 14px;
+  }  
+}
+@media screen and (max-width: 768px) {
+    .main{
+    width: 100%;
+    }
+    .sidebar{
+  	width: 100%;
+  	height: 100%;
+  	text-align: center;
+    }
+    .content{
+  	width: 100%;
+    }
+  	.tweet, .cosial, footer{
+  	display: none;
+  	}
+  	nav ul {
+	margin-left: 0;
+	padding-left: 0;
+	display: inline-block;
+	}
+	nav ul li {
+	margin-left: 0;
+	padding: 3px 15px;	
+	list-style: none;
+	display: inline-block;
+	}
+	nav ul li.first {
+	margin-left: 0;
+	border-left: none;
+	list-style: none;
+	display: inline;
+	} 
+	.overlay{
+	display: none;
+	}
+	.column-four{
+  	width: 41%;
+  	height: 41%;
+  	padding: 10px;
+   }
+   .post p {
+    font-family: 'OpenSans';
+    font-size: 14px;
+   }
+}
+@media screen and (max-width: 478px) {
+  .main{
+    width: 100%;
+  }
+  .sidebar{
+  	width: 100%;
+  	margin: 0px;
+  	padding: 0px;
+  }
+  .content{
+  	width: 100%;
+  }
+  .pagination{
+  	width: 100%;
+  }
+  .logo, nav{
+  	text-align: center;  	
+  }
+  .logo p{
+  	padding: 0px;
+  }
+  nav{
+  	display: block;
+  	padding: 10px;
+  }
+  nav ul li{
+  	text-align: center;  	
+  	display: inline-block;
+  	width: 100%;
+  }
+  nav ul li a{
+  	font-size: 20px;
+  	text-align: center;
+  	line-height: 30px;
+  }
+  .column-four{
+  	width: 100%;
+  	height: 100%;
+  	margin: 0px;
+  }
+  .overlay{
+	display: none;
+  }
+  .post p {
+    font-family: 'OpenSans';
+    font-size: 14px;
+  }
+}

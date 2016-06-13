@@ -1,10 +1,591 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>Gagarin Portfolio 2016</title>    
+    <meta name="description" content="Gagarin Andrey Portfolio Bootstrap">
+    <meta name="author" content="Andrey Gagarin">    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">     
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
-<body>
-	
-</body>
+<body id="page-top" class="index">    
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Gagarin</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden"><a href="#page-top">Головна</a></li>
+                    <li><a class="page-scroll" href="#skills">Технології</a></li>
+                    <li><a class="page-scroll" href="#experience">Навики</a></li>
+                    <li><a class="page-scroll" href="#portfolio">Портфоліо</a></li>
+                    <li><a class="page-scroll" href="#about">Навчання</a></li>
+                    <li><a class="page-scroll" href="#contact">Контакти</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="container-fluid padding-200 text-center border-bottom">
+            <h2 class="margin_bottom_40">Привіт, я Андрій Гагарін</h2>
+            <img src="img/me.jpg" class="img-circle img-fixed-w" alt="Gagarin Andrey">
+            <h2>І я - веб розробник!</h2>
+        </div>
+    </header> 
+    <section id="skills" class="border-bottom">      
+	    <div class="container padding">
+	        <div class="row">
+	            <div class="col-lg-12 text-center margin_bottom_40">
+	                <h2>Технології</h2>
+	                <h3>Технології веб-розробки, якими володію...</h3>
+	            </div>
+	        </div>
+	        <div class="row text-center">
+	            <div class="col-md-4">
+	                <span class="fa-stack fa-4x">
+	                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+	                    <i class="fa fa-html5 fa-stack-1x fa-inverse"></i>
+	                </span>
+	                <h4 class="service-heading">HTML 5</h4>
+	                <p class="text-muted">Використання нових елементів, анімація та графіка, мультимедіа. Техноголія дозволяє створювати досить вражаючі, веб-сайти без JS.</p>
+	                <p class="text-muted">Досвід розробки більше 3х років</p>
+	            </div>
+	            <div class="col-md-4">
+	                <span class="fa-stack fa-4x">
+	                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+	                    <i class="fa fa-css3 fa-stack-1x fa-inverse"></i>
+	                </span>
+	                <h4 class="service-heading">CSS 3</h4>
+	                <p class="text-muted">Розробка каскадних таблиць стилів третього покоління: від закругленних кутів до трансформації. Створення анімованих елементів без використання JS.</p>
+	                <p class="text-muted">Досвід розробки більше 3х років</p>
+	            </div>
+	            <div class="col-md-4">
+	                <span class="fa-stack fa-4x">
+	                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+	                    <i class="fa fa-arrows-alt fa-stack-1x fa-inverse"></i>
+	                </span>
+	                <h4 class="service-heading">Адаптивный дизайн</h4>
+	                <p class="text-muted">Досвід застосування гнучкого макета на основі grid-сітки, використання гнучких зображень, робота з медіа - запитами, проектування для мобільних пристроїв.</p>
+	                <p class="text-muted">Досвід розробки біля 2х років</p>
+	            </div>
+	        </div>
+	        <div class="row text-center">
+	            <div class="col-md-4">
+	                <span class="fa-stack fa-4x">
+	                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+	                    <i class="fa fa-th fa-stack-1x fa-inverse"></i>
+	                </span>
+	                <h4 class="service-heading">Bootstrap 3</h4>
+	                <p class="text-muted">Досвід розробки сайтів на основі фреймворка Bootstrap: grid-сітка, шаблони, типографіка, медіа, таблиці, форми, модальні вікна, навігація та алерти.</p>
+	                <p class="text-muted">Досвід розробки біля 2х років</p>
+	            </div>
+	            <div class="col-md-4">
+	                <span class="fa-stack fa-4x">
+	                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+	                    <i class="fa fa-code fa-stack-1x fa-inverse"></i>
+	                </span>
+	                <h4 class="service-heading">PHP 5.4</h4>
+	                <p class="text-muted">Досвід розробки серверної частини сайтів: HTTP-авторизація, cookies та сессії, работа з локальними та віддаленими файлами, сокети.</p>
+	                <p class="text-muted">Досвід розробки біля 1го року</p>
+	            </div>
+	            <div class="col-md-4">
+	                <span class="fa-stack fa-4x">
+	                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+	                    <i class="fa fa-database fa-stack-1x fa-inverse"></i>
+	                </span>
+	                <h4 class="service-heading">MySQL 5.7</h4>
+	                <p class="text-muted">Створення бази данних, конфігурування, структура та типи данних, нормалізація БД. Модифікації, форматування даних та розрахунків, формування обмежень даних.</p>
+	                <p class="text-muted">Досвід розробки біля 1го року</p>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+    <div class="pre_exp"></div>
+    <section id="experience" class="border-bottom">      
+      	<div class="container-fluid">
+        	<div class="container padding">
+				<div class="row">
+					<div class="col-md-12 margin_bottom_40">
+						<div class="section-heading text-center">
+							<h2>Навики</h2>
+							<h3>Навики програмування, якими володію...</h3>						
+						</div>
+					</div>
+				</div> 			
+	            <div class="row">
+	                <div class="col-lg-4 col-sm-4">
+	                    <div class="panel panel-primary">
+	                        <div class="panel-heading">
+	                            <i class="fa fa-cogs" aria-hidden="true"></i> ООП</div>
+	                        <div class="panel-body">
+	                            <p>Базові принципи та парадигми обєктно-орієнтованого програмування.</p>
+	                        </div>                        
+	                    </div>
+	                </div>
+	                <div class="col-lg-4 col-sm-4">
+		                <div class="panel panel-primary">
+		                    <div class="panel-heading">
+		                        <i class="fa fa-clipboard" aria-hidden="true"></i> Паттерни проектування</div>
+		                    <div class="panel-body">
+		                        <p>Використання яких дозволяє знизити складність розробки за рахунок готових абстракцій.</p>
+		                    </div>                        
+		                </div>
+		            </div>
+	                <div class="col-lg-4 col-sm-4">
+	                    <div class="panel panel-primary">
+	                        <div class="panel-heading">
+	                            <i class="fa fa-code" aria-hidden="true"></i> Кодінг</div>
+	                        <div class="panel-body">
+	                            <p>Чистота коду та коментування блоків, секцій.</p>
+	                        </div>                        
+	                    </div>
+	                </div>
+	            </div>	                          	            
+			</div>
+     	</div>
+    </section> 
+    <div class="pre_portfolio"></div> 
+    <section id="portfolio" class="border-bottom">     
+        <div class="container-fluid padding">
+	        <div class="row">
+	            <div class="col-lg-12 text-center margin_bottom_40">
+	                <h2>Портфоліо</h2>
+	                <h3>Приклади моїх робіт...</h3>
+	            </div>
+	        </div>
+        	<div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <div class="portfolio-hover-content"></div>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/polo360-preview.jpg" class="img-responsive" alt="polo360-preview">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Polo360</h4>
+                        <p class="text-muted">Responsive Web Site Template</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <div class="portfolio-hover-content"></div>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/mostrare-preview.jpg" class="img-responsive" alt="mostrare-preview">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Mostrare</h4>
+                        <p class="text-muted">Responsive Web Site Template</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <div class="portfolio-hover-content"></div>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/fowler-preview.jpg" class="img-responsive" alt="fowler-preview">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Martin Fowler</h4>
+                        <p class="text-muted">Responsive Web Site</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <div class="portfolio-hover-content"></div>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/pattern-preview.jpg" class="img-responsive" alt="pattern-preview">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Pattern</h4>
+                        <p class="text-muted">Responsive Web Site</p>
+                    </div>
+                </div>   
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <div class="portfolio-hover-content"></div>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/rasm-preview.jpg" class="img-responsive" alt="rasm-preview">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Rasm</h4>
+                        <p class="text-muted">Responsive Wordpress Template</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <div class="portfolio-hover-content"></div>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/likezz-preview.jpg" class="img-responsive" alt="likezz-preview">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Likezz</h4>
+                        <p class="text-muted">Responsive Wordpress Template</p>
+                    </div>
+                </div>             
+            </div>
+        </div>
+    </section>
+    <div class="pre_contact"></div>
+    <section id="about" class="border-bottom">
+        <div class="container-fluid padding">
+        	<div class="row">
+                <div class="col-lg-12 text-center margin_bottom_40">
+                    <h2>Навчання</h2>
+                    <h3>Історія моєї освіти...</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/timeline/logo.png" alt="RDAK">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2004-2005</h4>
+                                    <h4 class="subheading">Аграрний коледж</h4>
+                                </div>
+                                <div class="timeline-body">
+                                	<p>спеціальність: Технік-програміст.</p>
+                                    <i class="text-muted">Програмування для електронно-обчислювальної техніки та автоматизованих систем.</i>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/timeline/megy.jpg" alt="MEGY">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2008 - 2011</h4>
+                                    <h4 class="subheading">Міжнародний Економіко-Гуманітарний Університет ім. Степана Дем'янчука</h4>
+                                </div>
+                                <div class="timeline-body">
+                                	<p>спеціальність: Прикладна математика.</p>
+                                    <i class="text-muted">Технічний фахівець в галузі прикладних наук та техніки. Фахівець з прикладної математики та інформатики.</i>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/timeline/step.jpg" alt="ITStep">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2015</h4>
+                                    <h4 class="subheading">КА ШАГ Рівне</h4>
+                                </div>
+                                <div class="timeline-body">
+                                	<p>спеціальність: Розробка програмного забеспечення.</p>
+                                    <ul class="list-group text-muted">
+	                                    <li class="list-group-item">Сучасні технології програмування</li>
+	                                    <li class="list-group-item">Мови програмування (С, С++, С#, Java, JavaScript, PHP та ін.)</li>
+	                                    <li class="list-group-item">Технології програмування та адміністрування баз даних</li>
+	                                    <li class="list-group-item">Патерни проектування програмного забезпечення</li>
+	                                    <li class="list-group-item">Розробка програмного забезпечення під мобільні платформи Android, iOS, Windows Phone</li>
+	                                    <li class="list-group-item">Розробка WEB-додатків</li>                                    
+	                                    <li class="list-group-item">Сучасні технології безпеки програмного забезпечення</li>	                                    
+	                                </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/timeline/s.png" alt="ITStep">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Лютий 2016</h4>
+                                    <h4 class="subheading">КА ШАГ Рівне</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>спеціальність: Front-end Developer.</p>
+                                    <ul class="list-group text-muted">
+	                                    <li class="list-group-item">HTML5, CSS3</li>
+	                                    <li class="list-group-item">JavaScript, Gulp.js, JQuery, TypeScript, Angularjs, Backbone.js, Node.Js</li>
+	                                    <li class="list-group-item">Adaptive design</li>
+	                                    <li class="list-group-item">Bootstrap 3</li>
+	                                    <li class="list-group-item">Git</li>	                                    
+	                                </ul>
+                                </div>
+                            </div>
+                        </li>                        
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4>Вчитись 
+                                    <br>ніколи не
+                                    <br>пізно!</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section id="contact">
+        <div class="container-fluid">
+      		<div class="container padding">
+	        	<div class="row">
+	                <div class="col-lg-12 text-center padding-bottom">
+	                    <h2 class="color_white">Контакти</h2>
+	                    <h3 class="margin_bottom_20 color_white">Написати листа...</h3>
+	                </div>
+	            </div>
+	            <div class="row">
+	                <div class="col-lg-12">
+	                    <form name="sentMessage" id="contactForm" novalidate>
+	                        <div class="row">
+	                            <div class="col-md-6">
+	                                <div class="form-group">
+	                                    <input type="text" class="form-control" placeholder="І'мя" id="name" required data-validation-required-message="Будь ласка введіть Ваше і'мя.">
+	                                    <p class="help-block text-danger"></p>
+	                                </div>
+	                                <div class="form-group">
+	                                    <input type="email" class="form-control" placeholder="Пошта" id="email" required data-validation-required-message="Будь ласка введіть адресу поштової скринькі.">
+	                                    <p class="help-block text-danger"></p>
+	                                </div>
+	                                <div class="form-group">
+	                                    <input type="tel" class="form-control" placeholder="Телефон" id="phone" required data-validation-required-message="Будь ласка введіть номер телефону.">
+	                                    <p class="help-block text-danger"></p>
+	                                </div>
+	                            </div>
+	                            <div class="col-md-6">
+	                                <div class="form-group">
+	                                    <textarea class="form-control" placeholder="Повідомлення" id="message" required data-validation-required-message="Будь ласка введіть повідомлення."></textarea>
+	                                    <p class="help-block text-danger"></p>
+	                                </div>
+	                            </div>
+	                            <div class="clearfix"></div>
+	                            <div class="col-lg-12 text-center">
+	                                <div id="success"></div>
+	                                <button type="submit" class="btn btn-xl">Відправити</button>
+	                            </div>
+	                        </div>
+	                    </form>
+	                </div>
+	            </div>
+      		</div> 
+        </div>    
+    </section>
+    <footer>
+        <div class="container text-center padding">
+            <div class="row">	        	
+                <div class="col-md-12 margin_bottom_20">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="skype:Andreyyyy99?call"><i class="fa fa-skype"></i></a></li>
+                        <li><a href="https://www.facebook.com/andrey.rogue"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://github.com/"><i class="fa fa-github"></i></a></li>
+                    </ul>
+                </div>
+	            <div class="col-md-12">
+	                <p>Розроблено &copy; A.Gagarin Portfolio 2016</p>
+	            </div>                                
+            </div>
+        </div>
+    </footer>
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Polo360 Template</h2>
+                            <p class="item-intro text-muted">Адаптивний дизайн.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/polo360.jpg" alt="polo360">
+                            <p>Сайт створено по psd макету.</p>
+                            <p>Слайдер на чистому css, блок слайдера виходить за межі фіксованого блоку контенту, резиновий дизайн</p>
+                            <a href="templates/polo360/index.html">Посилання на сайт</a><br />
+                            <ul class="list-inline">
+                                <li>Дата: Квітень 2016</li>                                
+                                <li>Категорія: HTML5,CSS3</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Закрити проект</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Mostrare Template</h2>
+                            <p class="item-intro text-muted">Адаптивний дизайн.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/mostrare_large.jpg" alt="mostrare">
+                            <p>Сайт створено по psd шаблону. В ньому використано HTML5 та CC3 технології верстки. Адаптивний дизайн(медіа запити на сучасні мобільні пристрої)</p>
+                            <a href="templates/mostrare/index.html">Посилання на сайт</a><br />
+                            <ul class="list-inline">
+                                <li>Дата: Березень 2016</li>                                
+                                <li>Категорія: HTML5,CSS3</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Закрити проект</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Martin Fowler</h2>
+                            <p class="item-intro text-muted">Адаптивний дизайн.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/fowler.jpg" alt="fowler">
+                            <p>Сайт має унікальний дизайн. Адаптивний диайн по принципу mobile-first. Створено на чистому CSS</p>
+                            <a href="templates/fowler/index.html">Посилання на сайт</a><br />
+                            <ul class="list-inline">
+                                <li>Дата: Лютий 2016</li>                                
+                                <li>Категорія: HTML5, CSS3</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Закрити проект</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Pattern</h2>
+                            <p class="item-intro text-muted">Адаптивний дизайн.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/pattern.jpg" alt="pattern">
+                            <p>Сайт має унікальний дизайн. Адаптивний дизайн по принципу mobile-first. Створено на чистому CSS.</p>
+                            <a href="templates/pattern/index.html">Посилання на сайт</a><br />
+                            <ul class="list-inline">
+                                <li>Дата: Березень 2016</li>                                
+                                <li>Категорія: HTML5, CSS3</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Закрити проект</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Rasm</h2>
+                            <p class="item-intro text-muted">Сайт будівельної фірми.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/rasm.jpg" alt="rasm">
+                            <p>Сайт створено за допомогою CMS Wordpress. Адаптивний дизайн по принципу mobile-first. Створено на чистому CSS</p>
+                            <a href="http://rasm.com.ua/">Посилання на сайт</a><br />
+                            <ul class="list-inline">
+                                <li>Дата: Червень 2013</li>                                
+                                <li>Категорія: HTML5, CSS3, PHP, MySQL, CMS Wordpress</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Закрити проект</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Likezz</h2>
+                            <p class="item-intro text-muted">Новинний сайт.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/likezz.jpg" alt="likezz">
+                            <p>Сайт створено за допомогою CMS Wordpress. Адаптивний дизайн по принципу mobile-first. Створено на чистому CSS</p>
+                            <a href="http://likezz.net">Посилання на сайт</a><br />
+                            <ul class="list-inline">
+                                <li>Дата: Грудень 2014</li>                                
+                                <li>Категорія: HTML5, CSS3, PHP, MySQL, CMS Wordpress</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Закрити проект</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.min.js"></script>    
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.min.js"></script>
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+    <script src="js/style.js"></script>
+  </body>
 </html>

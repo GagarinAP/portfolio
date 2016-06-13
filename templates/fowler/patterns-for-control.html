@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Object-Oriented Software" />
+	<meta name="keywords" content="Design, Patterns, Elements, Reusable, Object-Oriented, Software" />
+	<title>Patterns for Offline Concurrency Control</title>
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<header>
+		<div class="container">
+			<a href="#" class="logo">Martin <span>Fowler</span></a>
+			<a href="index.html" class="home-link">&nbsp;</a>
+		</div>
+	</header>
+	<main>
+		<section class="content-section">
+			<div class="container">
+				<h1>Patterns for Offline Concurrency Control</h1>
+				<div class="wrap-image">
+					<img src="img/image_08.jpg" alt="">
+				</div>
+				<p>As much as possible, you should let your transaction system deal with concurrency problems. Handling concurrency control that spans system transactions plonks you firmly in the murky waters of dealing with concurrency yourself. This water is full of virtual sharks, jellyfish, piranhas, and other, less friendly creatures. Unfortunately, the mismatch between business and system transactions means you sometimes just have to wade in. The patterns that we've provided here are some techniques that we've found helpful in dealing with concurrency control that spans system transactions.</p>
+				<p>Remember that these are techniques you should only use if you have to. If you can make all your business transactions fit into a system transaction by ensuring that they fit within a single request, then do that. If you can get away with long transactions by forsaking scalability, then do that. By leaving concurrency control in the hands of your transaction software you'll avoid a great deal of trouble. These techniques are what you have to use when you can't do that. Because of the tricky nature of concurrency, we have to stress again that the patterns are a starting point, not a destination. We've found them useful, but we don't claim to have found a cure for all concurrency ills.</p>
+				<p>Our first choice for handling offline concurrency problems is <i>Optimistic Offline Lock</i> (416), which essentially uses optimistic concurrency control across the business transactions. We like this as a first choice because it's an easier approach to program and yields the best liveness. The limitation of <i>Optimistic Offline Lock</i> (416) is that you only find out that a business transaction is going to fail when you try to commit it, and in some circumstances the pain of that late discovery is too much. Users may have put an hour's work into entering details about a lease, and if you get lots of failures users lose faith in the system. Your alternative is <i>Pessimistic Offline Lock</i> (426), with which you find out early if you're in trouble but lose out because it's harder to program and it reduces your liveness.</p>
+				<p>With either of these approaches you can save considerable complexity by not trying to manage locks on every object. A <i>Coarse-Grained Lock </i> (438) allows you to manage the concurrency of a group of objects together. Another way you can make life easier for application developers is to use Implicit Lock (449), which saves them from having to manage locks directly. Not only does this save work, it also avoids bugs when people forget—and these bugs are hard to find.</p>
+				<p>A common statement about concurrency is that it's a purely technical decision that can be decided on after requirements are complete. We disagree. The choice of optimistic or pessimistic controls affects the whole user experience of the system. An intelligent design of <i>Pessimistic Offline Lock</i> (426) needs a lot of input about the domain from the users of the system. Similarly domain knowledge is needed to choose good <i>Coarse-Grained Locks</i> (438).</p>
+				<p>Futzing with concurrency is one of the most difficult programming tasks. It's very difficult to test concurrent code with confidence. Concurrency bugs are hard to reproduce and very difficult to track down. The patterns we've described have worked for us so far, but this is particularly difficult territory. If you need to go down this path, it's worth getting some experienced help. At the very least consult the books we mention at the end of this chapter.</p>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="container">
+			<p>&#169; Copyright 2016 &nbsp; <a href="#">#HardhatsTeam</a></p>
+		</div>
+	</footer>
+</body>
+</html>

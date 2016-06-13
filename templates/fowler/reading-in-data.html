@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Object-Oriented Software" />
+	<meta name="keywords" content="Design, Patterns, Elements, Reusable, Object-Oriented, Software" />
+	<title>Reading in Data page</title>
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<header>
+		<div class="container">
+			<a href="#" class="logo">Martin <span>Fowler</span></a>
+			<a href="index.html" class="home-link">&nbsp;</a>
+		</div>
+	</header>
+
+	<main>
+		<section class="content-section">
+			<div class="container">
+				<h1>Reading in Data</h1>
+				<div class="wrap-image">
+					<img src="img/image_05.jpg" alt="">
+				</div>
+			  <p>When reading in data I like to think of the methods as <b>finders</b> that wrap SQL select statements with a method-structured interface. Thus, you might have methods such as find(id) or    findForCustomer(customer). Clearly these methods can get pretty unwieldy if you have 23 different clauses in your select statements, but these are, thankfully, rare.</p>
+				<p>Where you put the finder methods depends on the interfacing pattern used. If your database interaction classes are table based-that is, you have one instance of the class per table in the database—then you can combine the finder methods with the inserts and updates. If your interaction classes are row based—that is, you have one interaction class per row in the database—this doesn't work.</p>
+				<p>With row-based classes you can make the find operations static, but doing so will stop you from making the database operations substitutable. This means that you can't swap out the database for testing purposes with <i>Service Stub (504)</i>. To avoid this problem the best approach is to have separate finder objects. Each finder class has many methods that encapsulate a SQL query. When you execute the query, the finder object returns a collection of the appropriate row-based objects.</p>
+				<p>One thing to watch for with finder methods is that they work on the database state, not the object state. If you issue a query against the database to find all people within a club, remember that any person objects you've added to the club in memory won't get picked up by the query. As a result it's usually wise to do queries at the beginning.</p>
+				<p>When reading in data, performance issues can often loom large. This leads to a few rules of thumb. Try to pull back multiple rows at once. In particular, never do repeated queries on the same table to get multiple rows. It's almost always better to pull back too much data than too little (although you have to be wary of locking too many rows with pessimistic concurrency control). Therefore, consider a situation where you need to get 50 people that you can identify by a primary key in your domain model, but you can only construct a query such that you get 200 people, from which you'll do some further logic to isolate the 50 you need. It's usually better to use one query that brings back unnecessary rows than to issue 50 individual queries.</p>
+				<p>Another way to avoid going to the database more than once is to use joins so that you can pull multiple tables back with a single query. The resulting record set looks odd but can really speed things up. In this case you may have a <i>Gateway (466)</i> that has data from multiple joined tables, or a <i>Data Mapper (165)</i> that loads several domain objects with a single call.</p>
+				<p>However, if you're using joins, bear in mind that databases are optimized to handle up to three or four joins per query. Beyond that, performance suffers, although you can restore a good bit of this with cached views. Many optimizations are possible in the database. These things involve clustering commonly referenced data together, careful use of indexes, and the database's ability to cache in memory. These are outside the scope of this book but inside the scope of a good DBA.</p>
+				<p>In all cases you should profile your application with your specific database and data. General rules can guide your thinking, but your particular circumstances will always have their own variations. Database systems and application servers often have sophisticated caching schemes, and there's no way I can predict what will happen for your application. For every rule of thumb I've used, I've heard of surprising exceptions, so set aside time to do performance profiling and tuning.</p>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="container">
+			<p>&#169; Copyright 2016 &nbsp; <a href="#">#HardhatsTeam</a></p>
+		</div>
+	</footer>
+</body>
+</html>
