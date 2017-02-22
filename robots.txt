@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /js
+
+Host: portfolio.likezz.net
+
+User-agent: Yandex
+Disallow: /js
+
