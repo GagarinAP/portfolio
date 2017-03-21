@@ -17,7 +17,7 @@ $(function() {
         { tag: '<i class="fa fa-picture-o fa-stack-1x fa-inverse"></i>', tehnology: 'MaterializeCSS', pre: "Розробка сайтів на основі фреймворка Materialize: grid-сітка, шаблони, типографіка, медіа, таблиці, форми, z-depth-X, hoverable, material design, модальні вікна, навігація та алерти.", exp: 'Досвід розробки біля 1го року' },
         { tag: '<i class="fa fa-bold fa-stack-1x fa-inverse"></i>', tehnology: 'Backbone.js', pre: "Розробка сайтів на основі js-фреймворка Backbone: model, collection, view, CRUD.", exp: 'Досвід розробки < 1го року' },
         { tag: '<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>', tehnology: 'React.js', pre: "Розробка сайтів на основі js-фреймворка React: webpack, babel, redux, es6, jsx, axios.", exp: 'Досвід розробки < 1го року' },
-        { tag: '<i class="fa fa-google fa-stack-1x fa-inverse"></i>', tehnology: 'Angular 2', pre: "Розробка сайтів на основі js-фреймворка Angular2: typescript, components, router.", exp: 'Досвід розробки < 1го року' },     
+        { tag: '<i class="fa fa-google fa-stack-1x fa-inverse"></i>', tehnology: 'AngularJS & 2', pre: "Розробка сайтів на основі js-фреймворка AngularJS & 2: typescript, components, router.", exp: 'Досвід розробки < 1го року' },     
     ];    
 
     app.Post = Backbone.Model.extend({});
